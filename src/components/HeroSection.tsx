@@ -17,7 +17,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-8 animate-fade-up">
-          Professional Photography
+          Fotografía Profesional
         </p>
         <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl italic text-foreground leading-tight mb-8 animate-fade-up" style={{ animationDelay: '0.2s' }}>
           "Capturing the fleeting moment, the story within the silence."
@@ -31,7 +31,7 @@ const HeroSection = () => {
             }}
             className="inline-block px-8 py-3 border border-foreground/30 text-xs uppercase tracking-[0.2em] text-foreground hover:bg-foreground hover:text-background transition-all duration-300"
           >
-            View Work
+            Ver trabajos
           </a>
         </div>
       </div>

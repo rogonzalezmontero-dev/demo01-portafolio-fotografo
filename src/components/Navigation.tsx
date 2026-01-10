@@ -33,17 +33,22 @@ const Navigation = () => {
           }}
           className="text-sm uppercase tracking-[0.2em] font-semibold text-foreground hover:text-accent transition-colors duration-300"
         >
-          Martín Frame
+          Rodrigo Montero
         </a>
 
         <div className="hidden md:flex items-center gap-8">
-          {['home', 'about', 'gallery', 'contact'].map((item) => (
+          {[
+            { id: 'home', label: 'inicio' },
+            { id: 'about', label: 'sobre mí' },
+            { id: 'gallery', label: 'galería' },
+            { id: 'contact', label: 'contacto' },
+          ].map((item) => (
             <button
-              key={item}
-              onClick={() => scrollToSection(item)}
+              key={item.id}
+              onClick={() => scrollToSection(item.id)}
               className="text-xs uppercase tracking-[0.15em] text-muted-foreground hover:text-foreground transition-colors duration-300 relative group"
             >
-              {item}
+              {item.label}
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-accent transition-all duration-300 group-hover:w-full" />
             </button>
           ))}
