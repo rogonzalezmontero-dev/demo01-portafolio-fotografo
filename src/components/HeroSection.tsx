@@ -17,7 +17,10 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
         <div className="animate-fade-up">
-          <p className="font-serif text-xl md:text-2xl lg:text-3xl text-foreground leading-relaxed mb-6">
+          <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-8">
+            Fotografía Profesional
+          </p>
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4">
             Fotografiar es detener la luz antes de que se vuelva olvido.
           </p>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4">

@@ -50,7 +50,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <textarea
-                  placeholder="Tu mensaje"
+                  placeholder="Cuéntame sobre tu proyecto: ¿qué tipo de fotografía necesitas? ¿fecha aproximada? ¿ubicación? Cualquier detalle que consideres importante..."
                   rows={5}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
