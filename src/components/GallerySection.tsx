@@ -32,10 +32,10 @@ const GallerySection = () => {
     : galleryImages.filter(img => img.category === activeFilter);
 
   const filters: { key: Category; label: string }[] = [
-    { key: 'all', label: 'All' },
-    { key: 'portrait', label: 'Portrait' },
-    { key: 'documentary', label: 'Documentary' },
-    { key: 'events', label: 'Events' },
+    { key: 'all', label: 'Todo' },
+    { key: 'portrait', label: 'Retrato y Momentos' },
+    { key: 'documentary', label: 'Documental Cultural' },
+    { key: 'events', label: 'Cobertura y Eventos' },
   ];
 
   return (
@@ -44,7 +44,7 @@ const GallerySection = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <p className="section-title">Portfolio</p>
-          <h2 className="section-heading">Work</h2>
+          <h2 className="section-heading">Trabajo</h2>
         </div>
 
         {/* Filter Buttons */}

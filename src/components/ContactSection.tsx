@@ -20,8 +20,8 @@ const ContactSection = () => {
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="section-title">Contact</p>
-          <h2 className="section-heading">Get In Touch</h2>
+          <p className="section-title">Contacto</p>
+          <h2 className="section-heading">Dale luz al instante</h2>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 lg:gap-20 max-w-5xl mx-auto">
@@ -31,7 +31,7 @@ const ContactSection = () => {
               <div>
                 <input
                   type="text"
-                  placeholder="Your Name"
+                  placeholder="Tu nombre"
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="contact-input"
@@ -41,7 +41,7 @@ const ContactSection = () => {
               <div>
                 <input
                   type="email"
-                  placeholder="Your Email"
+                  placeholder="Tu e-mail"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   className="contact-input"
@@ -50,7 +50,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <textarea
-                  placeholder="Your Message"
+                  placeholder="Tu mensaje"
                   rows={5}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
@@ -59,7 +59,7 @@ const ContactSection = () => {
                 />
               </div>
               <button type="submit" className="submit-btn">
-                Send Message
+                Enviar mensaje
               </button>
             </form>
           </div>
@@ -67,7 +67,7 @@ const ContactSection = () => {
           {/* Contact Info */}
           <div className="flex flex-col justify-center">
             <div className="mb-10">
-              <h3 className="text-lg font-semibold text-foreground mb-6 uppercase tracking-wider">Contact Info</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-6 uppercase tracking-wider">Información de contacto</h3>
               <div className="space-y-4">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-secondary flex items-center justify-center">
@@ -75,8 +75,8 @@ const ContactSection = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </div>
-                  <a href="mailto:hello@martinframe.com" className="text-muted-foreground hover:text-foreground transition-colors">
-                    hello@martinframe.com
+                  <a href="mailto:contacto@rodrigomonterophoto.com" className="text-muted-foreground hover:text-foreground transition-colors">
+                    contacto@rodrigomonterophoto.com
                   </a>
                 </div>
                 <div className="flex items-center gap-4">
@@ -94,7 +94,7 @@ const ContactSection = () => {
 
             {/* Social Media */}
             <div>
-              <h3 className="text-lg font-semibold text-foreground mb-6 uppercase tracking-wider">Follow Me</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-6 uppercase tracking-wider">Seguime en mis redes</h3>
               <div className="flex gap-4">
                 <a href="#" className="social-icon" aria-label="Instagram">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
