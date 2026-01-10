@@ -15,14 +15,28 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground mb-8 animate-fade-up">
-          Fotografía Profesional
-        </p>
-        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl italic text-foreground leading-tight mb-8 animate-fade-up" style={{ animationDelay: '0.2s' }}>
-          "Capturing the fleeting moment, the story within the silence."
-        </h1>
-        <div className="animate-fade-up" style={{ animationDelay: '0.4s' }}>
+      <div className="relative z-10 text-center px-6 max-w-3xl mx-auto">
+        <div className="animate-fade-up">
+          <p className="font-serif text-xl md:text-2xl lg:text-3xl text-foreground leading-relaxed mb-6">
+            Fotografiar es detener la luz antes de que se vuelva olvido.
+          </p>
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4">
+            En cada imagen busco gestos mínimos, esos que sostienen la memoria cuando los recuerdos comienzan a desvanecerse.
+          </p>
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4">
+            Mi mirada se posa en lo que ocurre una sola vez: instantes de vida que aún respiran, un rostro, un encuentro, una escena cotidiana que insiste en quedarse.
+          </p>
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-4">
+            La cámara se vuelve entonces un viaje silencioso, donde la luz revela lo que el tiempo intenta borrar y cada fotografía guarda la forma íntima de un recuerdo.
+          </p>
+          <p className="font-serif text-lg md:text-xl italic text-foreground mt-6 mb-4">
+            Porque algunas imágenes no se miran: se recuerdan.
+          </p>
+          <p className="text-sm text-muted-foreground tracking-wider">
+            — Rodrigo
+          </p>
+        </div>
+        <div className="animate-fade-up mt-10" style={{ animationDelay: '0.4s' }}>
           <a
             href="#gallery"
             onClick={(e) => {
