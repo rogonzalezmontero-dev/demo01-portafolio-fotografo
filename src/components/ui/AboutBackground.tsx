@@ -18,7 +18,6 @@ const AboutBackground: React.FC = () => {
     'https://images.unsplash.com/photo-1516726817505-f5ed825624d8?w=800&h=800&fit=crop&q=90',
   ];
 
-  // Desktop: 48 fotos, Móvil: 36 fotos
   const desktopImages: string[] = [];
   const mobileImages: string[] = [];
   
@@ -36,7 +35,6 @@ const AboutBackground: React.FC = () => {
 
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-      {/* FOTOS MUY OSCURECIDAS - como tu referencia */}
       <div className={`h-full w-full grid ${
         isMobile 
           ? 'grid-cols-2 sm:grid-cols-3 gap-0.5 p-0.5'
@@ -51,22 +49,16 @@ const AboutBackground: React.FC = () => {
               animationDelay: `${index * 0.1}s`,
             }}
           >
-            {/* CAPA OSCURA ENCIMA DE CADA FOTO */}
-            <div className="absolute inset-0 bg-black/70 z-10"></div>
-            
+            <div className="absolute inset-0 bg-[#31363f]/40 z-10"></div>
             <img
               src={src}
               alt=""
-              className="w-full h-full object-cover grayscale-[40%] brightness-75 opacity-60" // MÁS OSCURO
+              className="w-full h-full object-cover grayscale-[30%] brightness-85 opacity-70"
               loading="lazy"
             />
           </div>
         ))}
       </div>
-      
-      {/* OVERLAY GENERAL PARA OSCURECER MÁS */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/60 pointer-events-none"></div>
-      <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30 pointer-events-none"></div>
     </div>
   );
 };
