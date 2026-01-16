@@ -18,7 +18,7 @@ const AboutBackground: React.FC = () => {
   ];
 
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none z-0 opacity-[0.08]">
+    <div className="absolute inset-0 overflow-hidden pointer-events-none z-0 opacity-[0.18]">
       <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 p-4 md:p-8">
         {collageImages.map((src, index) => (
           <div 
