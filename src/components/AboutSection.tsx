@@ -12,11 +12,10 @@ const AboutSection = () => {
       
       <div className="relative z-10 container mx-auto px-4 md:px-6 pt-8">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-10">
-            <h1 className="text-3xl md:text-4xl font-light text-gray-200 mb-3 tracking-wide">
-              Sobre mí
-            </h1>
-            <div className="w-20 h-px bg-gray-600 mx-auto"></div>
+          {/* TÍTULO CON LA MISMA TIPOGRAFÍA QUE "TRABAJO" */}
+          <div className="text-center mb-12">
+            <p className="section-title">Sobre mí</p>
+            <h2 className="section-heading">La historia detrás del lente</h2>
           </div>
 
           <div 
