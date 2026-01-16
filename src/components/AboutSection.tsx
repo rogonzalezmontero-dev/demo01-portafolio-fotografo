@@ -5,15 +5,14 @@ const AboutSection = () => {
   return (
     <section 
       id="about" 
-      className="relative min-h-screen py-16 md:py-24 lg:py-32 overflow-hidden bg-black" // FONDO NEGRO
+      className="relative min-h-screen py-16 md:py-24 lg:py-32 overflow-hidden"
+      style={{ backgroundColor: '#31363f' }}
     >
       <AboutBackground />
       
-      {/* TEXTO DIRECTO SOBRE FONDO - como la sección de inicio */}
       <div className="relative z-10 container mx-auto px-4 md:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           
-          {/* ENCABEZADO - igual que "FOTOGRAFÍA PROFESIONAL" */}
           <div className="text-center mb-12 md:mb-16">
             <p className="text-xs md:text-sm uppercase tracking-[0.3em] text-gray-400 mb-4">
               Sobre mí
@@ -24,7 +23,6 @@ const AboutSection = () => {
             <div className="w-24 h-px bg-gray-700 mx-auto"></div>
           </div>
 
-          {/* TEXTO - sin caja, sobre fondo transparente */}
           <div className="space-y-6 md:space-y-8 px-4 md:px-0">
             <p className="text-gray-300 leading-relaxed text-base md:text-lg text-center md:text-left">
               La fotografía es mi manera de vivir más de cerca, de sentir el mundo con la intensidad de un latido. He viajado por lugares que me han dejado memoria en los ojos y en la piel, kilómetros que me enseñaron a observar, a escuchar silencios, a leer gestos y miradas que cuentan historias sin decir una palabra. Cada persona que se cruza en mi camino, cada instante que se detiene ante mi lente, es un pedazo de vida que intento conservar en luz y sombras.
@@ -43,11 +41,7 @@ const AboutSection = () => {
             </p>
           </div>
 
-          {/* LÍNEA FINAL - como la referencia */}
           <div className="mt-16 pt-8 border-t border-gray-800 text-center">
-            <p className="text-gray-500 text-sm italic">
-              "La fotografía no reproduce lo visible, hace visible lo que no siempre lo es."
-            </p>
           </div>
         </div>
       </div>
