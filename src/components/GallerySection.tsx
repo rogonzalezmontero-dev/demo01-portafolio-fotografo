@@ -10,18 +10,20 @@ interface GalleryImage {
 }
 
 const galleryImages: GalleryImage[] = [
-  { id: 1, src: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80', category: 'portrait', title: 'Portrait 1' },
-  { id: 2, src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=80', category: 'documentary', title: 'Documentary 1' },
-  { id: 3, src: 'https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80', category: 'events', title: 'Event 1' },
-  { id: 4, src: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&q=80', category: 'portrait', title: 'Portrait 2' },
-  { id: 5, src: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=600&q=80', category: 'documentary', title: 'Documentary 2' },
-  { id: 6, src: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&q=80', category: 'events', title: 'Event 2' },
-  { id: 7, src: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&q=80', category: 'portrait', title: 'Portrait 3' },
-  { id: 8, src: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&q=80', category: 'documentary', title: 'Documentary 3' },
-  { id: 9, src: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80', category: 'events', title: 'Event 3' },
-  { id: 10, src: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600&q=80', category: 'portrait', title: 'Portrait 4' },
-  { id: 11, src: 'https://images.unsplash.com/photo-1518173946687-a4c036bc9c8c?w=600&q=80', category: 'documentary', title: 'Documentary 4' },
-  { id: 12, src: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&q=80', category: 'events', title: 'Event 4' },
+  // COBERTURA Y EVENTOS (tus 3 fotos)
+  { id: 1, src: '/images/portfolio/events/evento-1.jpg', category: 'events', title: 'Evento 1' },
+  { id: 2, src: '/images/portfolio/events/evento-2.jpg', category: 'events', title: 'Evento 2' },
+  { id: 3, src: '/images/portfolio/events/evento-3.jpg', category: 'events', title: 'Evento 3' },
+  
+  // RETRATO Y MOMENTOS (placeholder)
+  { id: 4, src: '/images/portfolio/retrato/retrato-1.jpg', category: 'portrait', title: 'Retrato 1' },
+  { id: 5, src: '/images/portfolio/retrato/retrato-2.jpg', category: 'portrait', title: 'Retrato 2' },
+  { id: 6, src: '/images/portfolio/retrato/retrato-3.jpg', category: 'portrait', title: 'Retrato 3' },
+  
+  // DOCUMENTAL CULTURAL (placeholder)
+  { id: 7, src: '/images/portfolio/documental/documental-1.jpg', category: 'documentary', title: 'Documental 1' },
+  { id: 8, src: '/images/portfolio/documental/documental-2.jpg', category: 'documentary', title: 'Documental 2' },
+  { id: 9, src: '/images/portfolio/documental/documental-3.jpg', category: 'documentary', title: 'Documental 3' },
 ];
 
 const GallerySection = () => {
