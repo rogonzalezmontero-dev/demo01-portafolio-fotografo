@@ -7,12 +7,32 @@ const ContactSection = () => {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({ name: '', email: '', message: '' });
+    
+    try {
+      const response = await fetch('https://formspree.io/f/mvzzzzja', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          _subject: `Nuevo mensaje de ${formData.name} - Portfolio Fotográfico`,
+        }),
+      });
+
+      if (response.ok) {
+        alert('¡Mensaje enviado! Te responderé pronto.');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        alert('Error al enviar. Por favor intenta nuevamente.');
+      }
+    } catch (error) {
+      alert('Error de conexión. Por favor intenta más tarde.');
+    }
   };
 
   return (
@@ -50,7 +70,7 @@ const ContactSection = () => {
               </div>
               <div>
                 <textarea
-                  placeholder="Dejame tu mensaje"
+                  placeholder="Escribe tu mensaje"
                   rows={5}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
