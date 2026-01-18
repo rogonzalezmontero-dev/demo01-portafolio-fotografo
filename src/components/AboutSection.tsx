@@ -1,51 +1,68 @@
 import React from 'react';
-import AboutBackground from './ui/AboutBackground';
 
 const AboutSection = () => {
   return (
     <section 
       id="about" 
-      className="relative min-h-screen py-16 md:py-24 lg:py-32 overflow-hidden"
+      className="relative py-20 md:py-28 lg:py-32 overflow-hidden"
       style={{ backgroundColor: '#31363f' }}
     >
-      <AboutBackground />
-      
-      <div className="relative z-10 container mx-auto px-4 md:px-6 lg:px-8 pt-8 md:pt-12">
-        <div className="max-w-4xl mx-auto">
+      <div className="container mx-auto px-4 md:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto">
           
-          {/* Título sobre cuadro */}
-          <div className="text-center mb-12 md:mb-16">
-            <p className="text-xs md:text-sm uppercase tracking-[0.3em] text-gray-400 mb-4">
-              Sobre mí
-            </p>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-white mb-8">
-              La historia detrás del lente
-            </h1>
-            <div className="w-24 h-px bg-gray-700 mx-auto"></div>
+          {/* Encabezado Centrado */}
+          <div className="text-center mb-16">
+            <p className="section-title">Sobre mí</p>
+            <h2 className="section-heading">La historia detrás del lente</h2>
+            <div className="w-24 h-px bg-gray-600 mx-auto mt-6"></div>
           </div>
 
-          {/* CUADRO TRANSPARENTE #485669 */}
-          <div 
-            className="rounded-xl p-6 md:p-8 lg:p-10 border border-gray-700/30 shadow-2xl"
-            style={{
-              backgroundColor: 'rgba(72, 86, 105, 0.82)', // #485669 con 82% opacidad
-              backdropFilter: 'blur(6px)',
-            }}
-          >
-            <div className="space-y-6 md:space-y-8">
-              <p className="text-gray-200 leading-relaxed text-base md:text-lg lg:text-lg">
+          {/* CONTENIDO PRINCIPAL: Dos columnas (Texto + Retrato) */}
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-16">
+            
+            {/* COLUMNA IZQUIERDA: EL TEXTO (Tu historia) */}
+            <div className="lg:w-7/12 space-y-8">
+              <p className="text-gray-300 leading-relaxed text-lg md:text-xl">
                 La fotografía es mi forma de estar presente. He viajado por distintos lugares, recorriendo kilómetros que me enseñaron a observar con atención, a leer gestos y miradas, a encontrar en la luz y en las sombras aquello que suele pasar desapercibido.
               </p>
               
-              <p className="text-gray-200 leading-relaxed text-base md:text-lg lg:text-lg">
-               Trabajo desde lo humano y lo real: personas, momentos y recuerdos que merecen ser guardados. Mis imágenes buscan transmitir la elocuencia de lo simple, capturar instantes fugaces y transformar lo cotidiano en memoria visual..
+              <p className="text-gray-300 leading-relaxed text-lg md:text-xl">
+                Trabajo desde lo humano y lo real: personas, momentos y recuerdos que merecen ser guardados. Mis imágenes buscan transmitir la elocuencia de lo simple, capturar instantes fugaces y transformar lo cotidiano en memoria visual.
               </p>
 
-              <p className="text-gray-200 leading-relaxed text-base md:text-lg lg:text-lg">
+              {/* Frase final destacada */}
+              <div className="pt-6 border-t border-gray-700/40">
+                <p className="text-gray-100 text-2xl md:text-3xl font-serif italic leading-snug">
                   Es mirar con calma y quedarse con lo que importa.
-              </p>
-
+                </p>
+                {/* Firma */}
+                <p className="text-gray-400 font-serif text-lg mt-6">
+                  — Rodrigo Montero
+                </p>
+              </div>
             </div>
+
+            {/* COLUMNA DERECHA: EL RETRATO */}
+            <div className="lg:w-5/12 flex justify-center">
+              <div className="relative w-full max-w-md">
+                {/* Contenedor del retrato con detalles elegantes */}
+                <div className="relative overflow-hidden rounded-lg shadow-2xl">
+                  
+                  {/* Imagen de retrato (REEMPLAZA ESTA URL POR TU FOTO) */}
+                  <img
+                    src="/images/rodrigo-retrato.jpg" // 👈 **CAMBIAR POR TU RUTA**
+                    alt="Rodrigo Montero - Fotógrafo"
+                    className="w-full h-auto object-cover"
+                  />
+                  
+                  {/* Overlay sutil para profundidad */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent"></div>
+                </div>
+                  </p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
