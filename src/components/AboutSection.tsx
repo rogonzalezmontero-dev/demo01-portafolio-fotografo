@@ -34,26 +34,15 @@ const AboutSection = () => {
           >
             <div className="space-y-6 md:space-y-8">
               <p className="text-gray-200 leading-relaxed text-base md:text-lg lg:text-lg">
-                La fotografía es mi manera de vivir más de cerca, de sentir el mundo con la intensidad de un latido. He viajado por lugares que me han dejado memoria en los ojos y en la piel, kilómetros que me enseñaron a observar, a escuchar silencios, a leer gestos y miradas que cuentan historias sin decir una palabra. Cada persona que se cruza en mi camino, cada instante que se detiene ante mi lente, es un pedazo de vida que intento conservar en luz y sombras.
+                La fotografía es mi forma de estar presente. He viajado por distintos lugares, recorriendo kilómetros que me enseñaron a observar con atención, a leer gestos y miradas, a encontrar en la luz y en las sombras aquello que suele pasar desapercibido.
               </p>
               
               <p className="text-gray-200 leading-relaxed text-base md:text-lg lg:text-lg">
-                Mis imágenes buscan la elocuencia de lo invisible: la ternura escondida en un gesto, la fuerza de una mirada, la vibración silenciosa de momentos que pasan y que merecen ser recordados. La luz se convierte en mi lenguaje, las luces y los contrastes me ayudan a transmitir lo que no se puede nombrar, lo que sentimos pero a veces no entendemos. Cada fotografía es un recuerdo que respira, un instante que habla sin voz, un fragmento de mucha vida que se niega a desvanecerse.
+               Trabajo desde lo humano y lo real: personas, momentos y recuerdos que merecen ser guardados. Mis imágenes buscan transmitir la elocuencia de lo simple, capturar instantes fugaces y transformar lo cotidiano en memoria visual..
               </p>
 
               <p className="text-gray-200 leading-relaxed text-base md:text-lg lg:text-lg">
-                He aprendido que la belleza está en lo fugaz, en lo pequeño y en lo inesperado. Que un gesto mínimo, una sonrisa, un reflejo de luz sobre una calle, puede contener una eternidad. Por eso mis imágenes buscan capturar eso que la memoria guarda: momentos que nos atraviesan, emociones que nos hacen sentir vivos, lugares que nos marcan y personas que nos enseñan a mirar de otra manera.
-              </p>
-
-              <p className="text-gray-200 leading-relaxed text-base md:text-lg lg:text-lg">
-                Fotografiar es para mí un acto de intimidad y de libertad, un diálogo silencioso con la vida y con los que comparten esos instantes conmigo. Es detenerse en la efervescencia de lo cotidiano y transformarla en algo que quede, que conmueva, que emocione y que recuerde que la vida está hecha de gestos, de luces, de recuerdos que merecen ser eternos.
-              </p>
-            </div>
-
-            {/* Línea final dentro del cuadro */}
-            <div className="mt-12 pt-8 border-t border-gray-700/40 text-center">
-              <p className="text-gray-300 text-sm italic">
-                "La fotografía no reproduce lo visible, hace visible lo que no siempre lo es."
+                Fotografiar es, para mí, una manera de entender la vida y de compartirla a través de la luz.
               </p>
             </div>
           </div>
