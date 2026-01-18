@@ -35,30 +35,19 @@ const AboutSection = () => {
                 <p className="text-gray-100 text-2xl md:text-3xl font-serif italic leading-snug">
                   Es mirar con calma y quedarse con lo que importa.
                 </p>
-                {/* Firma */}
-                <p className="text-gray-400 font-serif text-lg mt-6">
-                  — Rodrigo Montero
-                </p>
               </div>
             </div>
 
             {/* COLUMNA DERECHA: EL RETRATO */}
             <div className="lg:w-5/12 flex justify-center">
               <div className="relative w-full max-w-md">
-                {/* Contenedor del retrato con detalles elegantes */}
                 <div className="relative overflow-hidden rounded-lg shadow-2xl">
-                  
-                  {/* Imagen de retrato (REEMPLAZA ESTA URL POR TU FOTO) */}
                   <img
                     src="/images/rodrigo-retrato.jpg" // 👈 **CAMBIAR POR TU RUTA**
                     alt="Rodrigo Montero - Fotógrafo"
                     className="w-full h-auto object-cover"
                   />
-                  
-                  {/* Overlay sutil para profundidad */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent"></div>
-                </div>
-                  </p>
                 </div>
               </div>
             </div>
