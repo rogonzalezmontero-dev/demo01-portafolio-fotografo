@@ -42,8 +42,7 @@ const AboutSection = () => {
               </p>
 
               <p className="text-gray-200 leading-relaxed text-base md:text-lg lg:text-lg">
-                Fotografiar es, para mí, una manera de entender la vida y de compartirla a través de la luz.
-              </p>
+               Es mirar con calma y quedarse con lo que importa
             </div>
           </div>
         </div>
