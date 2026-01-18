@@ -42,7 +42,9 @@ const AboutSection = () => {
               </p>
 
               <p className="text-gray-200 leading-relaxed text-base md:text-lg lg:text-lg">
-               Es mirar con calma y quedarse con lo que importa
+                  Es mirar con calma y quedarse con lo que importa.
+              </p>
+
             </div>
           </div>
         </div>
