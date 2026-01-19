@@ -38,17 +38,21 @@ const AboutSection = () => {
               </div>
             </div>
 
-            {/* COLUMNA DERECHA: EL RETRATO */}
+            {/* COLUMNA DERECHA: EL RETRATO REDONDO */}
             <div className="lg:w-5/12 flex justify-center">
-              <div className="relative w-full max-w-md">
-                <div className="relative overflow-hidden rounded-lg shadow-2xl">
+              <div className="relative">
+                {/* MARCO CIRCULAR con borde sutil y sombra */}
+                <div className="w-64 h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-gray-700/30 shadow-2xl">
                   <img
-                    src="/images/rodrigo-retrato.jpg" // 👈 **CAMBIAR POR TU RUTA**
+                    src="/images/rodrigo-retrato.jpg" // 👈 **TU FOTO AQUÍ**
                     alt="Rodrigo Montero - Fotógrafo"
-                    className="w-full h-auto object-cover"
+                    className="w-full h-full object-cover scale-105" /* scale-105 da un pequeño zoom para mejor encuadre */
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent"></div>
                 </div>
+                
+                {/* Elemento decorativo opcional (puedes quitarlo) */}
+                <div className="absolute -bottom-3 -right-3 w-24 h-24 border-2 border-amber-500/20 rounded-full"></div>
+                <div className="absolute -top-3 -left-3 w-16 h-16 border border-gray-500/30 rounded-full"></div>
               </div>
             </div>
 
