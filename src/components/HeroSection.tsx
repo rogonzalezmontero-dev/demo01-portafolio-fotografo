@@ -3,7 +3,7 @@ const HeroSection = () => {
     <section
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
-      style={{ backgroundColor: '#31363f' }} // ← COLOR CORRECTO
+      style={{ backgroundColor: '#31363f' }}
     >
       <div className="container relative z-10 mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16 max-w-6xl mx-auto">
@@ -44,7 +44,19 @@ const HeroSection = () => {
                 <p className="text-lg leading-relaxed text-right">
                   La cámara se vuelve un viaje silencioso y la luz revela lo que el tiempo intenta borrar.
                 </p>
-                
+              </div> {/* ← CIERRE DEL div space-y-5 */}
+
+              {/* Frase destacada */}
+              <p className="font-serif text-xl md:text-2xl italic text-gray-100 mt-8 mb-4 leading-snug text-right">
+                Porque algunas imágenes no se miran: se recuerdan.
+              </p>
+              
+              {/* Firma */}
+              <p className="text-sm text-gray-500 tracking-wider mt-6 text-right">
+                — Rodrigo
+              </p>
+            </div> {/* ← CIERRE DEL div animate-fade-up */}
+            
             <div className="animate-fade-up mt-10 text-right" style={{ animationDelay: '0.4s' }}>
               <a
                 href="#gallery"
@@ -57,9 +69,9 @@ const HeroSection = () => {
                 Ver trabajos
               </a>
             </div>
-          </div>
-        </div>
-      </div>
+          </div> {/* ← CIERRE DEL div lg:w-7/12 */}
+        </div> {/* ← CIERRE DEL div flex flex-col */}
+      </div> {/* ← CIERRE DEL div container */}
 
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
         <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
